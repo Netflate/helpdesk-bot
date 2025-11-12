@@ -1,0 +1,5 @@
+/.venv
+/bot/.env
+
+__pycache__/
+*.pyc
