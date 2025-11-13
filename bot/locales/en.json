@@ -1,0 +1,10 @@
+{
+  "start_message": "Hello! I'm the support bot. How can I help you?",
+  "choice1": "Technical issues",
+  "choice2": "Questions about features",
+  "choice3": "Payment / Subscription",
+  "choice4": "Other / Contact support",
+  "choice5": "Сменить язык на русский 🇷🇺"
+  
+}
+

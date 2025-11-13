@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Bot",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/bot/main.py"
+        }
+
+/*        {
+            "name": "Run Site",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/site/main.py"
+        }*/
+    ]
+}
