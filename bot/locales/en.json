@@ -4,7 +4,68 @@
   "choice2": "Questions about features",
   "choice3": "Payment / Subscription",
   "choice4": "Other / Contact support",
-  "choice5": "Сменить язык на русский 🇷🇺"
+  "choice5": "Сменить язык на русский 🇷🇺",
   
-}
+  "describe": "Please describe your issue in more detail in a single message",
+  "FinalMessage": "Thank you! Your message has been received. Our support team will get back to you shortly.",
 
+  "technical_faq": "<b>Here are the most common issues and what you can try (Random AI-generated FAQ):</b>\n\n<b>• The app won't start</b>\n  → Try restarting your device or reinstalling the app.\n\n<b>• Unable to log in</b>\n  → Check your login/password and make sure your internet connection is stable.\n\n<b>• Nothing is loading</b>\n  → Clear the cache and try switching networks (Wi-Fi ↔ mobile data).\n\n<b>• The app keeps crashing</b>\n  → Close unnecessary processes and update the app to the latest version.\n\n<b>• The server is not responding</b>\n  → Wait a couple of minutes and try again — maintenance may be in progress.\n\n<b>• Notifications are not coming through</b>\n  → Check notification permissions and battery-saving settings.\n\n<b>• Features work inconsistently</b>\n  → Update the app and restart it — this often fixes minor bugs.\n\n<b>• Payment error</b>\n  → Make sure your card is active and has enough balance.\n\n<b>• UI displays incorrectly</b>\n  → Adjust system scaling or restart the app.\n\n<b>• Slow performance</b>\n  → Clear the cache and check available storage space.",
+
+  "payment_faq": "<b>Here are common payment questions and what you can try (Random AI-generated FAQ):</b>\n\n<b>• Payment declined</b>\n  → Check your card's expiration date and try a different payment method.\n\n<b>• Money was deducted, but the purchase didn't appear</b>\n  → Restart the app and wait a few minutes — sometimes processing is delayed.\n\n<b>• Error entering card details</b>\n  → Ensure the fields are filled out correctly and 3D-Secure is enabled.\n\n<b>• Payment stuck at confirmation stage</b>\n  → Check your internet connection and try again.\n\n<b>• Subscription not activated</b>\n  → Refresh purchase status in settings or perform a resync.\n\n<b>• Too many payment attempts</b>\n  → Wait 10–15 minutes and try again; the bank may have temporarily blocked transactions.",
+
+  "feature_faq": "<b>Here are common feature questions and what you can try (Random AI-generated FAQ):</b>\n\n<b>• How to use feature X?</b>\n  → Check the user guide in the help section or on our website.\n\n<b>• Feature Y is not working as expected</b>\n  → Check the feature settings and ensure the app is updated to the latest version.\n\n<b>• Where can I find feature Z?</b>\n  → Feature Z is available in the settings menu under the 'Advanced' section.\n\n<b>• Can I customize feature A to my needs?</b>\n  → Yes, feature A has flexible settings that can be changed in the 'Settings' section.\n\n<b>• Feature B is causing errors</b>\n  → Try restarting the app and clearing the cache. If the problem persists, contact support.\n\n<b>• How to disable feature C?</b>\n  → Feature C can be disabled in the app settings under the 'Features' section.",
+
+  "back_to_menu": "Back",
+  
+  "ticket_question": "What type of issue are you experiencing?",
+
+  "categories": {
+    "technical_issues": {
+      "display_name": "Technical Issues",
+      "questions": [
+        {
+          "text": "On what device and OS are you experiencing the issue?",
+          "options": ["Windows", "Android", "iOS", "Linux", "MacOS"]
+        },
+        {
+          "text": "What version of the app are you using?",
+          "options": ["Latest", "Older version"]
+        }
+      ]
+    },
+    "payment_issues": {
+      "display_name": "Payment Issues",
+      "questions": [
+        {
+          "text": "Which payment method did you use?",
+          "options": ["Credit Card", "PayPal", "Google Pay", "Other"]
+        },
+        {
+          "text": "When did you try to make the payment?",
+          "options": ["Within the last hour", "Today", "This week", "Longer ago"]
+        },
+        {
+          "text": "Did you receive any error message?",
+          "options": ["Yes", "No"]
+        }
+      ]
+    },
+    "account_login": {
+      "display_name": "Account & Login",
+      "questions": [
+        {
+          "text": "Is the problem with password, email, or access?",
+          "options": ["Password", "Email", "Access"]
+        },
+        {
+          "text": "Have you tried to reset your password?",
+          "options": ["Yes", "No"]
+        }
+      ]
+    },
+    "other_question": {
+      "display_name": "Other / Question",
+      "questions": []
+    }
+  }
+}
