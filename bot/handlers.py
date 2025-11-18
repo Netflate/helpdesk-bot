@@ -190,7 +190,6 @@ async def handle_support_callbacks(callback: CallbackQuery, state: FSMContext):
                 
                 await state.update_data(ticket_data=ticket_data)
 
-    # Переходим к следующему вопросу
     if action == "ans":
         await ask_question(callback, state, lang, category_id, q_index=q_index + 1)
     else:
@@ -203,28 +202,15 @@ async def handle_ticket_message(msg: types.Message, state: FSMContext):
     data = await state.get_data()
     lang = data.get("lang", "en")
     
-    # Получаем все собранные данные
     ticket_data = data.get("ticket_data", {})
     ticket_text = msg.text
     
-    # Добавляем финальное описание в структуру
     ticket_data["user_description"] = ticket_text
     ticket_data["user_id"] = msg.from_user.id
     ticket_data["username"] = msg.from_user.username
-    
-    # ===== ВОТ ЗДЕСЬ У ТЕБЯ БУДЕТ ВСЯ ИНФА ДЛЯ ОТПРАВКИ НА САЙТ =====
-    # ticket_data = {
-    #     "category_id": "...",
-    #     "category_name": "...",
-    #     "answers": [
-    #         {"question": "...", "answer": "...", "question_index": 0},
-    #         {"question": "...", "answer": "...", "question_index": 1},
-    #     ],
-    #     "user_description": "текст от пользователя",
-    #     "user_id": 123456,
-    #     "username": "username"
-    # }
-    
+
+    print(ticket_data)
+
     # TODO: Здесь отправка на сайт
     # await send_ticket_to_website(ticket_data)
     

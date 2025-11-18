@@ -6,13 +6,13 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/bot/main.py"
-        }
+        },
 
-/*        {
+        {
             "name": "Run Site",
-            "type": "python",
+            "type": "go",
             "request": "launch",
-            "program": "${workspaceFolder}/site/main.py"
-        }*/
+            "program": "${workspaceFolder}/Site/cmd/main.go"
+        }
     ]
 }
