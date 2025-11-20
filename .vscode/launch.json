@@ -12,7 +12,7 @@
             "name": "Run Site",
             "type": "go",
             "request": "launch",
-            "program": "${workspaceFolder}/Site/cmd/main.go"
+            "program": "${workspaceFolder}/site/cmd/server/main.go"
         }
     ]
 }

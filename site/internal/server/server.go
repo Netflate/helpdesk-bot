@@ -1,6 +1,8 @@
 package server
 
 import (
+	"site/internal/routes"
+
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -10,6 +12,8 @@ type Server struct {
 
 func New() *Server {
 	app := fiber.New()
+
+	routes.Register(app)
 
 	return &Server{
 		app: app,
